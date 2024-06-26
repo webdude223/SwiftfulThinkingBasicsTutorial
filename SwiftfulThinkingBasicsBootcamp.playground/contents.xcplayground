@@ -7,5 +7,10 @@
         <page name='Operators'/>
         <page name='Functions'/>
         <page name='Optionals'/>
+        <page name='Tuples'/>
+        <page name='ObjectOrientedProgramming'/>
+        <page name='Structs'/>
+        <page name='Enums'/>
+        <page name='Classes '/>
     </pages>
 </playground>

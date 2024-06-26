@@ -98,9 +98,9 @@ func checkIfUserIsPremium6() -> Bool {
     //Make sure there is a value
     //if there is, let newValue equal that value
     //Else return out of the function
-    guard let newValue = userIsPremium else {
-        return newValue
-    }
+//    guard let newValue = userIsPremium else {
+//        return newValue
+//    }
     
     //Here we have access to the non-optional value
     return false
@@ -284,26 +284,26 @@ func getTitle() -> String {
 
 func getUserData() {
     
-    let username: String? = getUserName()
+    //let username: String? = getUserName()
     
     //I will get the count if the username is not nil
-    let count = username?.count
+    //let count = username?.count
     //notice that we are performing a method without unpacking the optional. We do this by using the ?
     
-    let title: String = getTitle()
+    //let title: String = getTitle()
     
     //I will get the count always
-    let count2 = title.count
+    //let count2 = title.count
     
     //in this case, we are using something called "Optional chaining" with the multiple ?
     //If username has a value, and first character in username has a value, then return value of "isLowercase
-    let firstCharacterIsLowercased = username?.first?.isLowercase
+    //let firstCharacterIsLowercased = username?.first?.isLowercase
     //this is important because username could be nil, but we could return the first letter "n" and the function wouldn't know the difference
     //this is a huge feature because we don't have to
     
     //Explicet unwrap
     //"I will get the count because I know 100% that username is not nil"
-    let count3: Int = username!.count
+    //let count3: Int = username!.count
     //In this case, the developer is telling the compiler that "I personally know this value is not nil"
     //The problem here is that it will crash your app if the value is nil
 }
